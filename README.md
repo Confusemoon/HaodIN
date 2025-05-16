@@ -3,7 +3,6 @@
 ## Login:
    - **Username:** `haodi@haodin.com`
    - **Password:** `password123`
-   - 
 ![HaodIN1](https://github.com/user-attachments/assets/50159b12-42e1-41da-b98d-7a21bc7dc6e8)
 ![HaodIN2](https://github.com/user-attachments/assets/f38ace6b-ddeb-41a1-b00f-952243e32568)
 
