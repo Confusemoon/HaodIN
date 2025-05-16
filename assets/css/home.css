@@ -83,23 +83,76 @@ header nav a:hover {
     height: 100px;
     border-radius: 50%;
 }
+
 .left-col h2 {
     margin: 10px 0 5px 0;
 }
+
 .left-col p {
     margin: 5px 0;
 }
-.follow-btn {
-    background-color: #4a148c;
-    color: white;
+
+.profile-card {
+    background-color: #ffffff;         
+    padding: 20px;                      
+    text-align: center;                  
+    border-radius: 8px;                  
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+
+.profile-card img.profile-img {
+    width: 120px; 
+    height: 120px;
+    border-radius: 50%;  
+    object-fit: cover;  
+    margin: 0 auto 10px; 
+    display: block;
+}
+
+.profile-card h2 {
+    font-size: 1.4em;
+    margin: 10px 0 5px;
+}
+
+.profile-card .profession {
+    margin: 0 0 15px;
+    color: #666;
+    font-size: 0.95em;
+}
+
+.profile-card .stats {
+    display: flex;
+    justify-content: space-around; 
+    color: #555;
+    font-size: 0.9em;
+    margin: 15px 0;
+}
+
+.profile-card .stat-item {
+    text-align: center;
+}
+
+.profile-card .stat-item strong {
+    display: block;
+    font-size: 1.1em;
+    color: #000;
+}
+
+.profile-card .follow-btn {
+    background-color: #4e1d9c;  /* a clean purple */
+    color: #fff;
     border: none;
-    padding: 6px 12px;
     border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 0.95em;
     cursor: pointer;
 }
-.follow-btn:hover {
-    background-color: #6a1b9a;
+
+.profile-card .follow-btn:hover {
+    background-color: #3a0f7a;
 }
+
 .stats {
     font-size: 0.9em;
     color: #555;
@@ -117,9 +170,36 @@ header nav a:hover {
     text-decoration: underline;
 }
 
+.profile-card .social-links a {
+    display: inline-flex;
+    align-items: center;
+    margin: 5px 5px 0 0;
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.profile-card .social-links a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    filter: grayscale(100%);
+}
+.profile-card .social-links a:hover img {
+    filter: none; 
+}
+
 /*-------------------*/
 /*  Middle column    */
 /*-------------------*/
+
+.post-input-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 15px;
+    margin-bottom: 20px;
+}
 
 #postBox {
     background: white;
@@ -127,41 +207,48 @@ header nav a:hover {
     margin-bottom: 20px;
     border: 1px solid #ddd;
 }
-#postBox textarea {
+.post-input-card textarea {
     width: 100%;
-    height: 60px;
-    padding: 6px;
-    box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
+    padding: 10px;
+    font-size: 1em;
     resize: vertical;
+    outline: none;
 }
-#postBox textarea:focus {
-border-color: #7e57c2;
-outline: none;
+.post-input-card textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.2);
 }
 
-#imageUploadBtn {
-    padding: 6px;
+.post-input-card .upload-icon {
     cursor: pointer;
+    width: 32px;
+    vertical-align: middle;
+    /* Remove any existing border/shadow if present */
     border: none;
-    background-color: #eee;
-    border-radius: 3px;
+    box-shadow: none;
 }
-#imageUploadBtn:hover {
-    background-color: #ddd;
+.post-input-card .upload-icon img {
+    width: 100%;
+    /* (Optional) make it grayscale for a minimalist look */
+    filter: grayscale(100%);
 }
-.post-btn {
-    margin-top: 10px;
-    padding: 6px 14px;
-    background-color: #4a148c;
-    color: white;
+.post-input-card .upload-icon:hover img {
+    filter: none;
+}
+.post-input-card .post-btn {
+    background-color: #007bff; /* LinkedIn-style blue */
+    color: #fff;
     border: none;
     border-radius: 4px;
+    padding: 8px 16px;
+    float: right;
+    font-size: 0.9em;
     cursor: pointer;
 }
-.post-btn:hover {
-    background-color: #6a1b9a;
+.post-input-card .post-btn:hover {
+    background-color: #0056b3;
 }
 
 /*-------------------*/

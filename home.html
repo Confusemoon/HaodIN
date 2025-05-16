@@ -36,66 +36,81 @@
 
   <!-- Main 3-column layout -->
 
+  <!-- Left column -->
   <div class="row">
-    <div class="column left-col">
-      <img src="./assets/img/Haodi.jpg" alt="Haodi's Avatar" class="profile-pic">
+  <div class="column left-col">
+    <div class="profile-card">
+      <img src="./assets/img/Haodi.jpg" alt="Haodi's Avatar" class="profile-img">
       <h2>Haodi Hua</h2>
-      <p>Software Developer</p>
+      <p class="profession">Software Developer</p>
       <button class="follow-btn">Follow</button>
-      <p class="stats">9999 connections, 77777 followers</p>
+
+      <p class="stats">
+        <span class="stat-item"><strong>9999</strong> Connections</span>
+        <span class="stat-item"><strong>77777</strong> Followers</span>
+      </p>
+
       <div class="social-links">
-        <a href="#"><img src="./assets/img/Linkedin.png" alt="LinkedIn icon"> LinkedIn</a><br>
+        <a href="#"><img src="./assets/img/Linkedin.png" alt="LinkedIn icon"> LinkedIn</a>
         <a href="#"><img src="./assets/img/Twitter.png" alt="Twitter icon"> Twitter</a>
       </div>
     </div>
-
-    <div class="column middle-col">
-      <div id="postBox">
-        <textarea id="newPostContent" placeholder="tell us your day, Haodi"></textarea>
-        <input type="file" id="imageInput" accept="image/*" style="display:none;">
-        <button id="imageUploadBtn"><img src="./assets/img/picture-upload.jpg" alt="Upload"></button>
-        <button id="postBtn" class="post-btn">Post</button>
-      </div>
-
-      <div id="feed">
-        <div class="post">
-          <img src="./assets/img/William.jpg" alt="William Bergeron" class="post-pic">
-          <div class="post-body">
-            <div class="post-header">
-              <strong>William Bergeron</strong>
-              <span class="date">Thu May 14 2025</span>
-            </div>
-            <p>Just wrapped up an amazing project designing sustainable architecture for our new community center. 
-              Feeling grateful for the opportunity to blend creativity with purpose!</p>
-            <img src="./assets/img/William-post.jpg" alt="William's post image" class="post-img">
-          </div>
-        </div>
-
-        <div class="post">
-          <img src="./assets/img/Johnny.jpg" alt="Sharuk Khan" class="post-pic">
-          <div class="post-body">
-            <div class="post-header">
-              <strong>Johnny Wells</strong>
-              <span class="date">Fri May 13 2025</span>
-            </div>
-            <p>🌦️ Just caught this UNREAL rainbow after the storm rolled through Cedar Ridge! Swipe right to see the 
-              double rainbow that popped up 10 minutes later. 🌈✨
-              “Sunshine is delicious, rain is refreshing, but together? They make magic.”</p>
-            <img src="./assets/img/Johnny-post.jpg" alt="Johnny's post image" class="post-img">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="column right-col">
-      <h3>People you may know</h3>
-      <div id="suggestions">
-      </div>
-    </div>
-
-    <div style="clear: both;"></div>
   </div>
 
-  <script src="/assets/js/home.js"></script>
+  <!-- Mid column -->
+
+<div class="column middle-col">
+  <div id="postBox" class="post-input-card">
+    <textarea id="newPostContent" placeholder="tell us your day, Haodi"></textarea>
+    <input type="file" id="imageInput" accept="image/*" style="display:none;">
+    <button id="imageUploadBtn" class="upload-icon">
+      <img src="./assets/img/picture-upload.jpg" alt="Upload">
+    </button>
+    <button id="postBtn" class="post-btn">Post</button>
+  </div>
+  
+  
+  <div id="feed">
+    <div class="post">
+      <img src="./assets/img/William.jpg" alt="William Bergeron" class="post-pic">
+      <div class="post-body">
+        <div class="post-header">
+          <strong>William Bergeron</strong>
+          <span class="date">Thu May 14 2025</span>
+        </div>
+        <p>Just wrapped up an amazing project designing sustainable architecture for our new community center. 
+          Feeling grateful for the opportunity to blend creativity with purpose!</p>
+        <img src="./assets/img/William-post.jpg" alt="William's post image" class="post-img">
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="./assets/img/Johnny.jpg" alt="Sharuk Khan" class="post-pic">
+      <div class="post-body">
+        <div class="post-header">
+          <strong>Johnny Wells</strong>
+          <span class="date">Fri May 13 2025</span>
+        </div>
+        <p>🌦️ Just caught this UNREAL rainbow after the storm rolled through Cedar Ridge! Swipe right to see the 
+          double rainbow that popped up 10 minutes later. 🌈✨
+          “Sunshine is delicious, rain is refreshing, but together? They make magic.”</p>
+        <img src="./assets/img/Johnny-post.jpg" alt="Johnny's post image" class="post-img">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Right column -->
+
+<div class="column right-col">
+  <h3>People you may know</h3>
+  <div id="suggestions">
+  </div>
+</div>
+
+<div style="clear: both;"></div>
+</div>
+
+<script src="/assets/js/home.js"></script>
 </body>
 </html>
