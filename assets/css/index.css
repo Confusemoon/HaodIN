@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/*-------------------*/
+/*   Basic reset     */
+/*-------------------*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/*--------------*/
+/*   Container  */
+/*--------------*/
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.split.left {
+    flex: 1;
+    background: url('../img/background.jpg') no-repeat center center/cover;
+}
+
+
+.split.right {
+    flex: 1;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------------*/
+/* login form   */
+/*--------------*/
+
+
+#loginForm {
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+}
+/*--------------*/
+/* Heading      */
+/*--------------*/
+
+#loginForm h1 {
+    color: #4a148c; 
+}
+#error {
+    color: red;
+    height: 1.2em;
+    margin-bottom: 10px;
+}
+/*--------------*/
+/* Input fields */
+/*--------------*/
+
+#loginForm input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#loginForm input:focus {
+    outline: none;
+    border-color: #7e57c2; 
+}
+/*--------/
+/* Links */
+/*-------*/
+
+#loginForm .links {
+    text-align: left;
+    margin: 5px 0;
+}
+#loginForm .links a {
+    font-size: 0.9em;
+    color: #4a148c;
+    text-decoration: none;
+}
+#loginForm .links a:hover {
+    text-decoration: underline;
+}
+/*--------------*/
+/*    Buttons   */
+/*--------------*/
+
+.login-btn, .signup-btn {
+    width: 48%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 2%;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.login-btn {
+    background-color: #4a148c; 
+    color: white;
+}
+.signup-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid #4a148c;
+}
+.login-btn:hover {
+    background-color: #6a1b9a;
+}
+.signup-btn:hover {
+    background-color: #e8eaf6;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Haodi Hua">
+        <meta name="description" content="Final-Assignment: HaodIN">
+        <meta name="keywords" content="web development, html, css, javascript, winnipeg, canada">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
+        <title>Final-Assignment: HaodIN</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/home.css">
+      <script defer src="./assets/js/home.js"></script>
+</head>
+<body>
+
+  <!-- Header with brand, search, nav, logout -->
+  <header>
+    <div class="brand">HaodIN</div>
+    <input type="text" id="searchBar" placeholder="Search...">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Profile</a>
+      <a href="#">Network</a>
+      <a href="#">Jobs</a>
+      <a href="#">Messages</a>
+      <a href="#">Notifications</a>
+    </nav>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <!-- Main 3-column layout -->
+
+  <div class="row">
+    <div class="column left-col">
+      <img src="./assets/img/Haodi.jpg" alt="Haodi's Avatar" class="profile-pic">
+      <h2>Haodi Hua</h2>
+      <p>Software Developer</p>
+      <button class="follow-btn">Follow</button>
+      <p class="stats">9999 connections, 77777 followers</p>
+      <div class="social-links">
+        <a href="#"><img src="./assets/img/Linkedin.png" alt="LinkedIn icon"> LinkedIn</a><br>
+        <a href="#"><img src="./assets/img/Twitter.png" alt="Twitter icon"> Twitter</a>
+      </div>
+    </div>
+
+    <div class="column middle-col">
+      <div id="postBox">
+        <textarea id="newPostContent" placeholder="tell us your day, Haodi"></textarea>
+        <input type="file" id="imageInput" accept="image/*" style="display:none;">
+        <button id="imageUploadBtn"><img src="./assets/img/picture-upload.jpg" alt="Upload"></button>
+        <button id="postBtn" class="post-btn">Post</button>
+      </div>
+
+      <div id="feed">
+        <div class="post">
+          <img src="./assets/img/William.jpg" alt="William Bergeron" class="post-pic">
+          <div class="post-body">
+            <div class="post-header">
+              <strong>William Bergeron</strong>
+              <span class="date">Thu May 14 2025</span>
+            </div>
+            <p>Just wrapped up an amazing project designing sustainable architecture for our new community center. 
+              Feeling grateful for the opportunity to blend creativity with purpose!</p>
+            <img src="./assets/img/William-post.jpg" alt="William's post image" class="post-img">
+          </div>
+        </div>
+
+        <div class="post">
+          <img src="./assets/img/Johnny.jpg" alt="Sharuk Khan" class="post-pic">
+          <div class="post-body">
+            <div class="post-header">
+              <strong>Johnny Wells</strong>
+              <span class="date">Fri May 13 2025</span>
+            </div>
+            <p>🌦️ Just caught this UNREAL rainbow after the storm rolled through Cedar Ridge! Swipe right to see the 
+              double rainbow that popped up 10 minutes later. 🌈✨
+              “Sunshine is delicious, rain is refreshing, but together? They make magic.”</p>
+            <img src="./assets/img/Johnny-post.jpg" alt="Johnny's post image" class="post-img">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column right-col">
+      <h3>People you may know</h3>
+      <div id="suggestions">
+      </div>
+    </div>
+
+    <div style="clear: both;"></div>
+  </div>
+
+  <script src="/assets/js/home.js"></script>
+</body>
+</html>
