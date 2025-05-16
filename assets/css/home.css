@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fafafa;
 }
+
 header {
     background: white;
     padding: 10px 20px;
@@ -195,7 +196,7 @@ header nav a:hover {
 .post-input-card {
     background-color: #ffffff;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     padding: 15px;
     margin-bottom: 20px;
@@ -225,30 +226,28 @@ header nav a:hover {
     cursor: pointer;
     width: 32px;
     vertical-align: middle;
-    /* Remove any existing border/shadow if present */
     border: none;
     box-shadow: none;
 }
 .post-input-card .upload-icon img {
     width: 100%;
-    /* (Optional) make it grayscale for a minimalist look */
     filter: grayscale(100%);
 }
 .post-input-card .upload-icon:hover img {
     filter: none;
 }
 .post-input-card .post-btn {
-    background-color: #007bff; /* LinkedIn-style blue */
+    background-color:  #4a148c; 
     color: #fff;
     border: none;
     border-radius: 4px;
-    padding: 8px 16px;
+    padding: 6px 16px;
     float: right;
     font-size: 0.9em;
     cursor: pointer;
 }
 .post-input-card .post-btn:hover {
-    background-color: #0056b3;
+    background-color:  #4a148c;
 }
 
 /*-------------------*/
@@ -335,3 +334,18 @@ header nav a:hover {
     color: black;
 }
 
+/*-------------------*/
+/*      Footer       */
+/*-------------------*/
+
+footer {   
+    bottom: 0;
+    left: 0;
+    width: 100%;           
+    background-color: #4a148c;  
+    color: #fff;           
+    text-align: center;    
+    padding: 12px 0;       
+    font-size: 0.9em;
+    z-index: 1000;         
+}

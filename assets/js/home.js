@@ -1,7 +1,9 @@
 'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
+
 // Logout button sends back to login page
+
   document.getElementById('logoutBtn').addEventListener('click', () => {
     window.location.href = 'index.html';
   });
@@ -21,7 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     postDiv.className = 'post';
 
     const pic = document.createElement('img');
-    pic.src = '../img/user-profile.jpg';
+    pic.src = '../assets/img/haodi.jpg';
     pic.alt = 'You';
     pic.className = 'post-pic';
     postDiv.appendChild(pic);
@@ -49,6 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
     postDiv.appendChild(body);
 
 // Insert the new post at the top of the feed
+
     const feed = document.getElementById('feed');
     feed.insertBefore(postDiv, feed.firstChild);
 
@@ -56,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
     imageInput.value = "";
   });
 
-// Fetch 10 random users for "People you may know"
+// Fetch random # users 
 
   fetch('https://randomuser.me/api/?results=10')
     .then(response => response.json())
