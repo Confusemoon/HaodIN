@@ -27,6 +27,7 @@ header .brand {
 header #searchBar {
     flex: 1;
     padding: 5px 10px;
+
     margin: 0 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -51,6 +52,7 @@ header nav a:hover {
     border: none;
     padding: 6px 12px;
     border-radius: 4px;
+
     cursor: pointer;
 }
 #logoutBtn:hover {
@@ -82,6 +84,7 @@ header nav a:hover {
 .profile-pic {
     width: 100px;
     height: 100px;
+
     border-radius: 50%;
 }
 
@@ -92,11 +95,11 @@ header nav a:hover {
 .left-col p {
     margin: 5px 0;
 }
-
 .profile-card {
     background-color: #ffffff;         
     padding: 20px;                      
-    text-align: center;                  
+    text-align: center;    
+
     border-radius: 8px;                  
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 
@@ -108,9 +111,9 @@ header nav a:hover {
     border-radius: 50%;  
     object-fit: cover;  
     margin: 0 auto 10px; 
+
     display: block;
 }
-
 .profile-card h2 {
     font-size: 1.4em;
     margin: 10px 0 5px;
@@ -139,13 +142,13 @@ header nav a:hover {
     font-size: 1.1em;
     color: #000;
 }
-
 .profile-card .follow-btn {
-    background-color: #4e1d9c;  /* a clean purple */
+    background-color: #4e1d9c;  
     color: #fff;
     border: none;
     border-radius: 4px;
     padding: 8px 16px;
+
     font-size: 0.95em;
     cursor: pointer;
 }
@@ -175,6 +178,7 @@ header nav a:hover {
     display: inline-flex;
     align-items: center;
     margin: 5px 5px 0 0;
+
     color: #555;
     text-decoration: none;
     font-size: 0.9em;
@@ -198,6 +202,7 @@ header nav a:hover {
     border: 1px solid #ddd;
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
     padding: 15px;
     margin-bottom: 20px;
 }
@@ -214,6 +219,7 @@ header nav a:hover {
     border-radius: 4px;
     padding: 10px;
     font-size: 1em;
+
     resize: vertical;
     outline: none;
 }
@@ -242,6 +248,7 @@ header nav a:hover {
     border: none;
     border-radius: 4px;
     padding: 6px 16px;
+
     float: right;
     font-size: 0.9em;
     cursor: pointer;
@@ -282,6 +289,7 @@ header nav a:hover {
 .post img.post-img {
     max-width: 100%;
     margin-top: 10px;
+
     border-radius: 4px;
 }
   
@@ -300,10 +308,10 @@ header nav a:hover {
     margin-bottom: 10px;
 }
 .suggestion img {
-
     width: 40px;
     height: 40px;
     border-radius: 50%;
+
     margin-right: 10px;
 }
 

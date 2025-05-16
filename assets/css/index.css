@@ -19,13 +19,10 @@ html, body {
     display: flex;
     height: 100%;
 }
-
 .split.left {
     flex: 1;
     background: url('../img/background.jpg') no-repeat center center/cover;
 }
-
-
 .split.right {
     flex: 1;
     background: #f5f5f5;
@@ -38,12 +35,12 @@ html, body {
 /* login form   */
 /*--------------*/
 
-
 #loginForm {
     width: 80%;
     max-width: 300px;
     text-align: center;
 }
+
 /*--------------*/
 /* Heading      */
 /*--------------*/
@@ -56,6 +53,7 @@ html, body {
     height: 1.2em;
     margin-bottom: 10px;
 }
+
 /*--------------*/
 /* Input fields */
 /*--------------*/
@@ -64,6 +62,7 @@ html, body {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
+    
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -72,9 +71,10 @@ html, body {
     outline: none;
     border-color: #7e57c2; 
 }
-/*--------/
-/* Links */
-/*-------*/
+
+/*--------*/
+/* Links  */
+/*--------*/
 
 #loginForm .links {
     text-align: left;
@@ -88,19 +88,29 @@ html, body {
 #loginForm .links a:hover {
     text-decoration: underline;
 }
+
+/*-----------------*/
+/* Button Group    */
+/*-----------------*/
+.button-group {
+    display: flex;
+
+    justify-content: space-between;
+    gap: 4%;            
+    margin-top: 10px;
+}
+
 /*--------------*/
 /*    Buttons   */
 /*--------------*/
-
 .login-btn, .signup-btn {
-    width: 48%;
+    width: 48%;           
     padding: 10px;
-    margin-top: 10px;
-    margin-right: 2%;
-    border: none;
     border-radius: 4px;
     font-size: 1em;
+
     cursor: pointer;
+    border: none;
 }
 .login-btn {
     background-color: #4a148c; 
