@@ -18,6 +18,9 @@ html, body {
 .container {
     display: flex;
     height: 100%;
+    width: 100%;
+    max-width: none;
+    margin: 0;
 }
 .split.left {
     flex: 1;
